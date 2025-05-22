@@ -31,14 +31,14 @@ logging.basicConfig(
 # Configuration
 CONFIG = {
     'query': 'sourdough bread baking',
-    'published_after': '2020-03-15T00:00:00Z',
-    'published_before': '2021-04-01T00:00:00Z',
+    'published_after': '2019-03-15T00:00:00Z',
+    'published_before': '2022-04-01T00:00:00Z',
     'max_results_per_page': 50,
     'csv_file_path': 'data/scrapped_data.csv',
     'batch_size': 50,  # For video details (max 50 per request)
-    'update_existing': True,  # Set to True to update stats for existing videos
+    'update_existing': False,  # Set to True to update stats for existing videos
     'fetch_transcripts': True,  # Set to True to fetch transcripts for new videos
-    'update_transcripts': True  # Set to True to update missing transcripts for existing videos
+    'update_transcripts': False  # Set to True to update missing transcripts for existing videos
 }
 
 def get_api_key():
